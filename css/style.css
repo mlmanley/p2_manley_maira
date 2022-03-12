@@ -1,0 +1,667 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+/*=======================================
+
+ Universal Styling
+
+========================================*/
+
+body {
+    background-color: #fcf8ee;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3{
+    font-family: coquette, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    text-decoration: none;
+    color: #c68000;
+    padding: 30px 0;
+    font-size: 1.8em;
+}
+
+h3 {
+    padding: 8px 0 10px 0;
+    z-index: 99;
+    font-size: 1.6em;
+}
+
+h3,
+p {
+    color: #333333
+}
+
+p {
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+section {
+    text-align: center;
+    padding: 0 30px;
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+
+
+
+/*=======================================
+
+  Helpers
+
+========================================*/
+
+.border {
+    padding-top: 15px;
+    margin-top: 15px;
+}
+
+.border:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    background: #c68000;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mobile-hide {
+    display: none;
+}
+
+.desktop-hide {
+    display: block;
+}
+
+.full-bleed {
+    max-width: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column; 
+}
+
+/*=======================================
+
+  Header Nav Styling
+
+========================================*/
+
+header {
+    background-color: #ff7b53;
+    padding: 10px 20px;
+    width: 100%;
+    position: fixed;
+    top: 0; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header img {
+    max-width: 150px;
+}
+
+.logo-container {
+    max-width: 45%;
+}
+
+.logo-container,
+.hamburger {
+    display: inline-block;
+}
+
+.hamburger a {
+    color: #fcf8ee;
+    font-size: 2.2em;
+}
+
+nav {
+    position: absolute;
+    top: 88px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 140px;
+    width: 100%;
+    background: #ff7a52e0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 20px;
+}
+  
+nav > ul > li {
+    display: block;
+    position: relative;
+    margin: 5px 25px;
+}
+  
+nav ul li a {
+    color: #fcf8ee;
+    font-family: europa, sans-serif;
+    font-weight: 200;
+    font-style: normal;
+    transition: .3s;
+    
+}
+  
+ul li a:hover {
+    border-bottom: 2px solid #fcf8ee;
+    transition: .3s;
+}
+
+ul li li a:hover {
+    border-bottom: 2px solid #ff7b53;
+    ;
+}
+  
+.sub-menu {
+    display: none;
+    list-style-type: none;
+    background-color: #ff7b53;
+    width: 110px;
+    padding: 10px;
+   
+}
+
+.sub-menu a {
+    color: #ff7b53;
+}
+
+.menu-item:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #fcf8ee;
+    color: #ff7b53;
+    border-bottom: 2px solid #ff7b53;
+    left: -35px;
+    top: 23px;
+}
+
+ .social-media a {
+    margin: 0 10px;
+    color: #fcf8ee;
+    font-size: 1.5em;
+    transition: .3s;
+}
+
+.social-media a:hover {
+    border-bottom: 2px solid #fcf8ee;
+    transition: .3s;
+}
+
+nav,
+.social-media {
+    display: none;
+}
+
+
+
+/*=======================================
+
+Top section Styling
+
+========================================*/
+
+.top-section {
+    background-image: url("../images/hero.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 88px;
+}
+
+.hero-text {
+    background-color: rgba(252, 248, 238, 0.8);
+    max-width: 360px;
+    padding: 25px;
+    line-height: 1.5;
+    border-radius: 30px 0;
+}
+
+h1 {
+    color: #c68000;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+
+.whatsapp {
+    display: flex;
+}
+
+.button-whats a{
+    color:#fcf8ee;
+}
+
+.button-whats {
+    color: #fcf8ee;
+    background-color: #6ec465;
+    border: 0.188em solid #fcf8ee;
+    padding: 10px 6px;
+    border-radius: 10px 0;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.button-whats:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.whatsapp img {
+    max-width: 50px;
+}
+
+.button-whats,
+.whatsapp img {
+    margin: 15px 3px 0;
+
+}
+
+/*=======================================
+
+Bakery Options Styling
+
+========================================*/
+
+.container-bakery h3 {
+    background-color: #ffffff;
+}
+
+.bakery-box {
+    background: #ffffff;
+    border-radius: 40px 0;
+    padding: 25px;
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 10px #7575753d;
+}
+
+.bakery-box h3 {
+    font-size: 2.1em;
+    padding: 20px 0 0;
+}
+
+/*=======================================
+
+Specials Styling
+
+========================================*/
+
+
+.specials img {
+    border: 0.7em solid #ffffff;
+    border-radius: 40px 0;
+}
+
+.check-out {
+    margin: 30px 0px;
+}
+
+.check-out a {
+    color: #fcf8ee;
+    background-color: #ff7b53;
+    border: 0.2em solid #ffffff;
+    padding: 8px 14px;
+    border-radius: 8px 0;
+    transition: 0.3s;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.check-out a:hover {
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+/*=======================================
+
+Catering Styling
+
+========================================*/
+
+.catering {
+    background-color: #a67c52;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.catering h2,
+.catering p {
+    color: #fcf8ee;
+}
+
+.catering h2 {
+    padding: 20px 0;
+}
+
+.catering h2.mobile-hide {
+    padding: 0 0 5px;
+}
+
+.catering img {
+    border: 8px solid #fcf8ee;
+    border-radius: 30px 0;
+    max-width: 250px;
+}
+
+.get-started {
+    margin: 20px;
+}
+
+.get-started a {
+    color: #a67c52;
+    background-color: #fcf8ee;
+    padding: 7px 14px;
+    border-radius: 5px 0;
+    transition: 0.3s;
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.get-started a:hover {
+    color:#ff7b53;
+    transition: 0.3s;
+}
+
+.get-started a:active {
+    color:#a67c52;
+    transition: 0.3s;
+}
+
+
+
+/*=======================================
+
+Follow Us Styling
+
+========================================*/
+.follow-us {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;}
+
+.follow-us a {
+    margin-bottom: 50px;
+    color: #c68000;
+    font-family: coquette, sans-serif;
+    font-weight: 700;
+    font-size: 1.125em ;
+}
+
+.follow-us a:hover {
+    color:#ff7b53;
+    transition: 0.3s;
+}
+
+.follow-us a:active {
+    color:#c68000;
+    transition: 0.3s;
+}
+.follow-us h2 {
+    padding: 1px;
+}
+
+/*=======================================
+
+About Us Page Styling
+
+========================================*/
+
+.about-page {
+    margin-top: 130px;
+    padding: 30px;
+}
+
+aside {
+    text-align: center;
+    padding: 5px 10px;
+   
+}
+
+article img {
+    border: 8px solid #ffffff;
+    border-radius: 35px 0;
+}   
+
+figcaption {
+    font-family: europa, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #c68000;
+    font-size: .75em;
+}
+
+.about-page-h2 {
+    padding: 0 0 1px 0;
+    border-bottom: 2px solid #c68000;
+    margin-bottom: 15px;
+}
+/*=======================================
+
+Footer Styling
+
+========================================*/
+
+footer {
+    background-color: #ff7b53;
+    color: #fcf8ee;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #fcf8ee;
+    padding-top: 10px;
+    font-size: 0.6em;
+}
+
+.social-media-footer a {
+    margin: 0 10px;
+    color: #fcf8ee;
+    font-size: 1.25em;
+    transition: .3s;
+}
+
+.social-media-footer a:hover {
+    border-bottom: 2px solid #fcf8ee;
+    transition: .3s;
+}
+
+
+/*=======================================
+
+Media Queries
+
+========================================*/
+
+
+@media screen and (min-width: 767px) {
+    
+    p {
+        font-size: 1.125em;
+    }
+
+    h1 {
+        font-size: 2.125em;
+    }
+
+    h2 {
+        font-size: 1.75em;
+    }
+    
+    nav,
+    .social-media {
+        display:block;
+        color: white;
+        text-decoration: none;
+    }
+
+    nav {
+        position: static;
+        height: 100%;
+        width: auto;
+    }
+
+    nav ul {
+        margin: 0;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        position: relative;
+        margin: 0 25px;
+    }
+    
+
+    .mobile-hide {
+        display: block;
+    }
+
+    .desktop-hide {
+        display: none;
+    }
+
+    .hamburger{
+        display: none;
+    }
+    
+    .flex-container {
+        flex-direction: row; 
+        max-width: 960px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .flex-container.reverse {
+        flex-direction: row-reverse;
+        margin: 0 auto;
+    }
+
+    .flex-container .text-box {
+        max-width: 50%;
+        padding: 10px 44px;
+    }
+
+    .flex-container figure {
+        max-width: 50%;
+    }
+
+    .top-section {
+        height: 600px;
+    }
+
+    .hero-text {
+        max-width: 500px;
+    }
+
+    .container-bakery {
+        display: flex;
+    }
+
+    .bakery-box {
+        margin: 20px;
+        padding: 12px;
+    }
+
+    .bakery-box img {
+        border-radius: 40px 0;
+    }
+
+    .bakery-box h3 {
+        font-size: 1.25em;
+        padding: 8px 0;
+    }
+
+    .catering {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .specials img {
+        max-width: 300px;
+    }
+
+    .catering-container {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .main-container {
+        margin: 0 auto;
+        background-color: #fcf8ee;
+    }
+
+    .about-page {
+        display: flex;
+        flex-direction: row;
+        margin-top: 175px;
+        height: 69vh;
+        justify-content: center;
+    }
+    
+    .about-page p {
+        font-size: 1em;
+    }
+
+    article {
+        width: 50%;
+        margin: 10px;
+    }   
+     
+    aside {
+        width: 40%;
+        margin: 28px;
+    }
+}
