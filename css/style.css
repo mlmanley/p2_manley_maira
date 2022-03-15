@@ -486,6 +486,21 @@ figcaption {
     border-bottom: 2px solid #c68000;
     margin-bottom: 15px;
 }
+
+
+/*=======================================
+
+Menu Styling
+
+========================================*/
+
+.sweet-menu img {
+    max-width: 300px;
+}
+
+
+
+
 /*=======================================
 
 Footer Styling
