@@ -1,25 +1,134 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
-  <head>
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Let It Be Bakery | Gallery</title>
+
+  <!-- link to style.css -->
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+  <!-- link to font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
+
+  <!-- google/adobe fonts -->
+  <link rel="stylesheet" href="https://use.typekit.net/gau3aux.css" />
+
+  <!-- scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="scripts/scripts.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="logo-container">
+      <a href="index.html">
+        <img src="images/logoletitbe.png" alt="Logo" title="Logo" />
+      </a>
+    </div>
+
+    <nav>
+      <ul>
+        <li class="menu-item"><a href="about.html">About</a></li>
+        <li class="menu-item"><a href="menu.html">Menu</a>
+          <ul class="sub-menu">
+            <li class="menu-item"><a href="menu.html">Sweet</a></li>
+            <li class="menu-item"><a href="menu.html">Savory</a></li>
+            <li class="menu-item"><a href="menu.html">Gluten Free</a></li>
+          </ul>
+        </li>
+        <li class="menu-item"><a href="gallery.html">Gallery</a></li>
+        <li class="menu-item"><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <div class="hamburger">
+      <a href="#"> <i class="fas fa-bars"></i></a>
+    </div>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/letitbepaes"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/letitbepaes/?hl=en"> <i class="fab fa-instagram-square"></i></a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="gallery">
+
+      <div id="savory">
+        <div class="gallery-details">
+          <img src="images/frenchbread.jpeg" alt="Picture of French Bread" title="Picture of French Bread">
+          <figcaption> French Bread</figcaption>
+        </div>
+        <div class="gallery-details">
+          <img src="images/multigrain.jpeg" alt="Picture of multigrain bread" title="Picture of multigrain bread">
+          <figcaption>Italian Multigrain Bread</figcaption>
+        </div>
+        <div class="gallery-details">
+          <img src="images/bread2.jpeg" alt="Picture of Italian Bread" title="Picture of Italian Bread">
+          <figcaption> Italian Bread</figcaption>
+        </div>
+        <div class="gallery-details">   
+          <img src="images/cheesebread.jpeg" alt="Picture of Cheese Rolls" title="Picture of Cheese Rolls">
+          <figcaption> Cheese Rolls</figcaption>
+        </div>
+        <div class="gallery-details">
+          <figcaption> Pigs In a Blanket</figcaption>
+          <img src="images/savory.jpg" alt="Picture of Stuffed Bread" title="Picture of Stuffed Bread">
+        </div>
+        <div class="gallery-details">
+          <figcaption> Cheese, Basil and Tomato Stuffed Bread</figcaption>
+          <img src="images/bread1.jpeg" alt="Picture of Stuffed Bread" title="Picture of Stuffed Bread">
+        </div>
+    </div>
+
+    <div id="sweet">
+      <img src="images/sweet1.jpg" alt="Pastry" title="Pastry" />
+
+      <div class="gallery-details">
+        <img src="images/bigsonho.jpeg" alt="Picture of Sweet Roll" title="Picture of Sweet Roll">
+        <figcaption>Berliner</figcaption>
+      </div>
+      <div class="gallery-details">
+        <img src="images/rosca.jpeg" alt="Picture of Sweet Roll" title="Picture of Sweet Roll">
+        <figcaption>Vanilla Pastry Bread</figcaption>
+      </div>
+      <div class="gallery-details">
+        <img src="images/delivery2.jpeg" alt="Picture of Sweet Roll" title="Picture of Sweet Roll">
+        <figcaption>Chocolate Croissant</figcaption>
+      </div>
+      <div class="gallery-details">
+        <img src="images/coconutbread.jpg" alt="Picture of Sweet Roll" title="Picture of Sweet Roll">
+        <figcaption> Coconut Sweet Bread </figcaption>
+      </div>
+    </div>
     
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Let It Be Bakery | About Us</title>
-  
-    <!-- link to style.css -->
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-  
-    <!-- link to font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
-      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous" />
-  
-    <!-- google/adobe fonts -->
-    <link rel="stylesheet" href="https://use.typekit.net/gau3aux.css" />
-    
-      <!-- scripts -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="scripts/scripts.js"></script>
-    
-  </head>
+    <section id="glutenfree">
+      <img src="images/glutenfr.jpg" alt="Gluten Free Loaf" title="Gluten Free Loaf" />
+      <div class="gallery-details">
+        <img src="images/glutenfree.jpeg" alt="Picture of Banana Bread" title="Picture of Banana Bread">
+        <figcaption>Banana Cake</figcaption>
+      </div>
+      <div class="gallery-details">
+        <img src="images/gluten.jpg" alt="Picture of Multigrain Loaf" title="Picture of Multigrain Loaf">
+        <figcaption> Multigrain Loaf</figcaption>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social-media-footer">
+        <a href="https://www.facebook.com/letitbepaes"> <i class="fab fa-facebook"></i></a>
+        <a href="https://www.instagram.com/letitbepaes/?hl=en"> <i class="fab fa-instagram-square"></i></a>
+      </div>
+      <p>Let It Be Bakery 2022</p>
+    </footer>
+  </main>
+</body>
+
+</html>
