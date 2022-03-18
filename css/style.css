@@ -97,6 +97,18 @@ section {
     transform: translate(-50%, -50%);
 }
 
+/* .border:after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 80%;
+    background: #c68000;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
 .mobile-hide {
     display: none;
 }
@@ -162,7 +174,7 @@ nav {
     text-align: center;
 }
 
-nav ul {
+ul {
     list-style: none;
     margin: 20px;
 }
@@ -267,7 +279,6 @@ h1 {
     line-height: 1.2;
     margin-bottom: 15px;
 }
-
 
 .whatsapp {
     display: flex;
@@ -494,12 +505,26 @@ Menu Styling
 
 ========================================*/
 
+
+.menu-container {
+margin-top: 95px;
+}
+
 .sweet-menu img {
-    max-width: 300px;
+    max-width: 400px;
+    width: 100%;
 }
 
 
+/*=======================================
 
+Gallery Styling
+
+========================================*/
+
+.gallery-details figcaption{
+    margin: 1px 0 10px 0;
+}
 
 /*=======================================
 
