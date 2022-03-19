@@ -526,19 +526,16 @@ Gallery Styling
 
 ========================================*/
 
-.gallery-container {
-    margin-top: 120px;
-}
 
-.gallery-container h1 {
+.gallery-title {
     text-align: center;
     padding-bottom: 10px;
+    margin-top: 110px;
 }
 
 .gallery-details figcaption{
-    margin: 1px 0 10px 0;
+    margin: 1px 0 14px 0;
 }
-
 
 
 /*=======================================
@@ -618,7 +615,6 @@ Media Queries
         margin: 0 25px;
     }
     
-
     .mobile-hide {
         display: block;
     }
@@ -719,4 +715,11 @@ Media Queries
         width: 40%;
         margin: 28px;
     }
+
+    .gallery-container {
+        display:flex;
+    }
+
+
 }
+
