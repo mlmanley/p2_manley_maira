@@ -503,6 +503,14 @@ Menu Styling
     position: relative;
 }
 
+#savory, #sweet, #glutenfree {
+    margin-bottom: 45px;
+}
+
+.menu-container li {
+    padding: 5px 0;
+}
+
 .menu-container h1 {
     text-align: center;
 }
@@ -533,8 +541,10 @@ Gallery Styling
     margin-top: 110px;
 }
 
-.gallery-details figcaption{
+.gallery-details p{
     margin: 1px 0 14px 0;
+    color: #c68000;
+    font-size: 1em;
 }
 
 
@@ -720,6 +730,9 @@ Media Queries
         display:flex;
     }
 
+    .menu-container li {
+        padding: 8px 0;
+    }
 
 }
 
